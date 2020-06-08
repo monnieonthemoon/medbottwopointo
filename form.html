@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<script scr='MedBot.js'></script>
+<link rel = "stylesheet" type= "text/css" href="home.css">
+<link rel = "stylesheet" type= "text/css" href="form.css">
+
+<html>
+
+<head>
+  <center>
+  <h2>
+    MedBot Hospital Efficiency
+  </h2>
+</head>
+<br>
+<head>
+  <style>
+    a {
+     text-decoration: none;
+    }
+  </style>
+</head>
+
+<center>
+  <button class="tablink"
+  onclick="window.location.href='home.html'">Home</button>
+
+  <button class="tablink"
+  onclick="window.location.href='form.html'">Check In</button>
+
+  <button class= "tablink"
+  onclick= "window.location.href='inspiration.html'">Inspiration</button>
+
+  <button class="tablink"
+  onclick="window.location.href='references.html'">References</button>
+
+</center>
+<br>
+<br>
+<center>
+
+  <h2> Online Check In </h2>
+
+</center>
+<body>
+<div class="container">
+  <form action="/action_page.php">
+
+    <h4>Patient Information</h4>
+<br>
+    <label for="fname" align= "left">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First">
+
+    <label for="lname" align= "left"> Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last">
+
+    <label for="gender" align= "left">Gender</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="dob">Date Of Birth</label>
+    <input type="text" id="dob" name="dateofbirth" placeholder="xx/xx/xxxx">
+
+    <label for="race">Race/Ethnicity</label>
+    <select id="race" name="race">
+      <option value="americanindian/alaskanative">American Indian/Alaska Native</option>
+      <option value="asian">Asian</option>
+      <option value="black/africanamerican">Black/African American</option>
+      <option value="nativehawaiian">Native Hawaiian or Other Pacific Islander</option>
+      <option value="white">White</option>
+    </select>
+
+    <h4>Address</h4>
+    <label for="streetname">Street</label>
+    <input type="text" name="street" placeholder="Street Name">
+
+    <label for="cityname">City</label>
+    <input type="text" name="city" placeholder="City">
+
+    <label for="state">State</label>
+    <select id="state" name="state">
+      <option value="alabama">AL</option>
+      <option value="alaska">AK</option>
+      <option value="arizona">AR</option>
+      <option value="arkansas">AR</option>
+      <option value="california">CA</option>
+      <option value="colorado">CO</option>
+      <option value="connecticut">CT</option>
+      <option value="delaware">DE</option>
+      <option value="florida">FL</option>
+      <option value="georgia">GA</option>
+      <option value="hawaii">HI</option>
+      <option value="idaho">ID</option>
+      <option value="illionois">IL</option>
+      <option value="indiana">IN</option>
+      <option value="iowa">IA</option>
+      <option value="kansas">KS</option>
+      <option value="kentucky">KY</option>
+      <option value="louisiana">LA</option>
+      <option value="maine">ME</option>
+      <option value="maryland">MD</option>
+      <option value="massachussetts">MA</option>
+      <option value="michigan">MI</option>
+      <option value="minnesota">MN</option>
+      <option value="mississippi">MS</option>
+      <option value="missouri">MO</option>
+      <option value="montana">MT</option>
+      <option value="nebraska">NE</option>
+      <option value="nevada">NV</option>
+      <option value="new hampshire">NH</option>
+      <option value="new jersey">NJ</option>
+      <option value="new mexico">NM</option>
+      <option value="new york">NY</option>
+      <option value="north carolina">NC</option>
+      <option value="north dakota">ND</option>
+      <option value="ohio">OH</option>
+      <option value="oklahoma">OK</option>
+      <option value="oregon">OR</option>
+      <option value="pennsylvania">PA</option>
+      <option value="rhode island">RI</option>
+      <option value="south carolina">SC</option>
+      <option value="south dakota">SD</option>
+      <option value="tennessee">TN</option>
+      <option value="texas">TX</option>
+      <option value="utah">UT</option>
+      <option value="vermont">VT</option>
+      <option value="virginia">VA</option>
+      <option value="washington">WA</option>
+      <option value="west virginia">WV</option>
+      <option value="wisconsin">WI</option>
+      <option value="Wyoming">WY</option>
+      <option value="puerto rico">PR</option>
+    </select>
+
+    <label for="zipcode">Zip Code</label>
+    <input type="text" id="zipcode" name="zipcode" placeholder="">
+
+    <label for="health">Health Conditions?</label>
+    <p>
+    <h5>YES       NO</h5>
+    <input type="checkbox" id="yes" name="yes" placeholder=""> <input type="checkbox" id="no" name="no" placeholder="">
+    <!-- <button class="btn yes">YES</button>
+    <button class="btn no">NO</button> -->
+    <p>
+    <label for="listingconditions">If Yes, Then Please List All Of Them</label>
+    <textarea id="listing" name="listing" placeholder="Type"
+    style="height:40px"></textarea>
+
+
+
+    <label for="meds">Prescription Medicaiton?</label>
+    <p>
+    <h5>YES      NO</h5>
+    <input type="checkbox" id="meds" name="meds" placeholder=""> <input type="checkbox" id="med" name="med" placeholder="">
+
+    <p>
+    <label for="listing2">If Yes, Please List All Of Them</label>
+    <textarea id="listing2" name="listing2" placeholder="Type"
+    style="height:40px"></textarea>
+
+    <h4> Emergency Contact Information</h4>
+
+    <label for="conname">Name of Emergency Contact 1</label>
+    <input type="text" id="conname" name="conname" placeholder="Name">
+
+
+    <label for="contacts">Contact Phone Number</label>
+    <input type="text" id="contacts" name="contacts" placeholder="xxx-xxx-xxxx">
+
+    <label for="conname2">Name of Emergency Contact 2</label>
+    <input type="text" id="conname2" name="conname2" placeholder="Name">
+
+    <label for="contacts2">Contact Phone Number </label>
+    <input type="text" id="contacts2" name="contacts2" placeholder="xxx-xxx-xxxx">
+
+
+    <h4>Family/General Doctor Information</h4>
+    <label for="generaldoc">Family/General Doctor's Name</label>
+    <input type="text" id="generaldoc" name="doc" placeholder="Name">
+
+    <label for="clinicname">Clinic Name</label>
+    <input type="text" id="clinicname" name="clinicname" placeholder="">
+
+    <label for="clinicadd">Clinic Address</label>
+    <input type="text" id="clinicadd" name="clinicadd" placeholder="">
+
+    <label for="clinicphone">Clinic Phone Number</label>
+    <input type="text"id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+
+
+    </form>
+    <h4>
+    <label for="reasoning">Reason for Visit</label></h4>
+    <textarea id="reasoning" name="reasoning" placeholder="Type"
+    style="height:200px"></textarea>
+
+    <head>
+    <style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+
+
+    <!-- <a href="C:\Users\GWC\Desktop\form.html" class="button">Submit</a> -->
+
+    </body>
+
+  <div class="popup" onclick="myFunction()">
+  <a href="C:\Users\GWC\Desktop\form.html" class="button">Submit</a><span class="popuptext" id="myPopup"></span>
+  </div>
+
+
+
+    <!-- <div id="thanks" class="modal">
+      <h3>Thank you!</h3>
+    </div>
+
+
+    <button type="submit" onclick= "document.getElementById('thanks').style.display='block'" style="width:auto;">Submit</button> -->
+
+
+  <!-- </form> -->
+</div>
+</body>
+</html>
